@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsl17io0ik5tt"]
+
+[ext_resource type="Script" path="res://Scripts/Slime.gd" id="1_dqny2"]
+[ext_resource type="Texture2D" uid="uid://xea5qgk2y8bp" path="res://Assets/Enemies/Slime.png" id="1_jjikj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bmy13"]
+size = Vector2(20, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vmee"]
+size = Vector2(13.5, 12)
+
+[node name="slime" type="CharacterBody2D" groups=["Enemy"]]
+position = Vector2(2, -16)
+scale = Vector2(2, 2)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_dqny2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 8)
+shape = SubResource("RectangleShape2D_bmy13")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1, 0)
+texture = ExtResource("1_jjikj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.75, 8)
+shape = SubResource("RectangleShape2D_5vmee")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

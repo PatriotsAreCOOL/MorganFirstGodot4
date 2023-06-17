@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://f2y6pafxuwla"]
+
+[ext_resource type="Texture2D" uid="uid://chs88h3cho2bb" path="res://Assets/POWER_UPS/Speed_Multiplier.png" id="1_7rhpr"]
+[ext_resource type="Script" path="res://Scripts/Power_ups/Speed_power_up.gd" id="1_fj2v7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wub5o"]
+size = Vector2(32, 26)
+
+[node name="Speed_POWER_UP" type="Area2D"]
+script = ExtResource("1_fj2v7")
+
+[node name="SpeedMultiplier" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_7rhpr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_wub5o")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

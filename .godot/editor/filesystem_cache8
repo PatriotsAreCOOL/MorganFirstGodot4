@@ -1,0 +1,48 @@
+2a60927148abd1d33b818b535e306557
+::res://::1687006594
+Basketball_Hoop-removebg-preview.png::CompressedTexture2D::3857514720490648908::1678550106::1680961812::1::::<><>::
+icon.svg::CompressedTexture2D::8481803585883116829::1678547278::1678547302::1::::<><>::
+::res://Assets/::1687008682
+35-350544_app-rocketship-sprite-final-rocket-ship-pixel-art.png::::-1::0::0::0::::<><>::
+Aix2helper.png::CompressedTexture2D::6227170624285865966::1686403978::1686403984::1::::<><>::
+Celtics Court.png::CompressedTexture2D::5380349687997241296::1678549234::1678549244::1::::<><>::
+Cooooollllllll !!!!!   BASKETBALL!!!!!!!!!.png::CompressedTexture2D::4822181370992748691::1680358238::1680358244::1::::<><>::
+Player AI X2.png::CompressedTexture2D::1763129702146755907::1685195433::1685197837::1::::<><>::
+player.png::CompressedTexture2D::2465496754013628666::1678551042::1678551060::1::::<><>::
+something.png::CompressedTexture2D::3069835737610174430::1682175992::1682539573::1::::<><>::
+Untitled.png::CompressedTexture2D::5788157731073704898::1683147607::1683378255::1::::<><>::
+::res://Assets/Enemies/::1681328337
+Slime.png::CompressedTexture2D::1622655338641976421::1680963600::1680963602::1::::<><>::
+::res://Assets/Fonts/::1687008714
+Fat-Fish.ttf::FontFile::1592251403486544976::1687008710::1687008714::1::::<><>::
+::res://Assets/POWER_UPS/::1685197857
+HP_BOOST.png::CompressedTexture2D::505041782148388048::1683990218::1683990242::1::::<><>::
+Player AI spawner pick up.png::CompressedTexture2D::4328132583226836071::1685197849::1685197857::1::::<><>::
+Speed_Multiplier.png::CompressedTexture2D::5303385075404441007::1683380040::1683380040::1::::<><>::
+::res://Assets/WEBP/::1681328337
+Celtics Court.webp::CompressedTexture2D::3693635501945431592::1678549186::1678549228::1::::<><>::
+::res://Scenes/::1687009761
+ai_x_2_helper.tscn::PackedScene::7387821087286233084::1687009459::0::1::::<><>::uid://cuyqucqll4rm1
+basket_ball.tscn::PackedScene::5208605490373584385::1686408937::0::1::::<><>::res://Scripts/basket_ball.gd<>uid://cax5vf1wuff7x
+celtics_court..tscn::PackedScene::7867464642305999621::1687009459::0::1::::<><>::uid://ciwjtqyj5lvbc
+helper_ai.tscn::PackedScene::8569285236927546732::1687009459::0::1::::<><>::res://Scripts/helper_ai.gd<>uid://0ecqu237aqu2
+hoop.tscn::PackedScene::609719700813621942::1687009459::0::1::::<><>::res://Scripts/Hoop.gd<>uid://bu7ux6wm20enk
+main.tscn::PackedScene::2782238886773355195::1687009761::0::1::::<><>::res://Scripts/main.gd<>uid://bxib1ohbypr3y<>uid://ixl82rs2qqju<>uid://dkdb81fbl8gkb<>uid://bsl17io0ik5tt<>uid://bfusmch8vtq4w<>uid://duda41q7sfn4w<>uid://ddiylma6jhdce<>uid://wxkfbcnehy0g
+player.tscn::PackedScene::4017387003253268460::1687009459::0::1::::<><>::res://Scripts/Player.gd<>uid://bbekmvis80vxa
+Slime.tscn::PackedScene::3674164254650293889::1687009459::0::1::::<><>::res://Scripts/Slime.gd<>uid://xea5qgk2y8bp
+spawner.tscn::PackedScene::2779766909749643128::1687009459::0::1::::<><>::res://Scripts/Spawner.gd
+::res://Scenes/Power_UPs/::1687009459
+hp_boost.tscn::PackedScene::5040352158696806125::1687009459::0::1::::<><>::uid://hgv712m67pv1<>res://Scripts/Power_ups/hp_boost.gd
+Speed_power_up.tscn::PackedScene::408195773096199678::1687009459::0::1::::<><>::uid://chs88h3cho2bb<>res://Scripts/Power_ups/Speed_power_up.gd
+::res://Scripts/::1687009761
+basket_ball.gd::GDScript::-1::1686408938::0::1::::<>Area2D<>::
+helper_ai.gd::GDScript::-1::1686409191::0::1::::<>CharacterBody2D<>::
+Hoop.gd::GDScript::-1::1682777154::0::1::::<>StaticBody2D<>::
+Player.gd::GDScript::-1::1686408856::0::1::::<>CharacterBody2D<>::
+main.gd::GDScript::-1::1687009458::0::1::::<>Node2D<>::
+Globals.gd::GDScript::-1::1687009761::0::1::::<>Node<>::
+Slime.gd::GDScript::-1::1682775328::0::1::::<>CharacterBody2D<>::
+Spawner.gd::GDScript::-1::1686408507::0::1::::<>Node2D<>::
+::res://Scripts/Power_ups/::1683990269
+hp_boost.gd::GDScript::-1::1683990269::0::1::::<>Area2D<>::
+Speed_power_up.gd::GDScript::-1::1683990269::0::1::::<>Area2D<>::

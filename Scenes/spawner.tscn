@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfusmch8vtq4w"]
+
+[ext_resource type="Script" path="res://Scripts/Spawner.gd" id="1_2vjy7"]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource("1_2vjy7")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 23.0
+one_shot = true
+autostart = true
+
+[node name="BoostTimer" type="Timer" parent="."]
+wait_time = 12.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="BoostTimer" to="." method="_on_boost_timer_timeout"]

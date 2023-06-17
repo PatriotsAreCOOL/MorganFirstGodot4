@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkdb81fbl8gkb"]
+
+[ext_resource type="Texture2D" uid="uid://ciwjtqyj5lvbc" path="res://Assets/Celtics Court.png" id="1_oqudy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyb6g"]
+size = Vector2(59, 1487)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_66qdd"]
+size = Vector2(2876, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1yv6"]
+size = Vector2(63.5, 1479)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1rug"]
+size = Vector2(2881, 29.5)
+
+[node name="CelticsCourt" type="Sprite2D"]
+position = Vector2(192, 465)
+texture = ExtResource("1_oqudy")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["hoop"]]
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1407.5, 4.5)
+shape = SubResource("RectangleShape2D_gyb6g")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=["hoop"]]
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" groups=["ourt barrer"]]
+position = Vector2(-1, -728.5)
+shape = SubResource("RectangleShape2D_66qdd")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." groups=["hoop"]]
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-1414.75, -2.5)
+shape = SubResource("RectangleShape2D_t1yv6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D3/CollisionShape2D" groups=["hoop"]]
+position = Vector2(182, 19)
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3/CollisionShape2D/StaticBody2D"]
+position = Vector2(1226.25, 716.25)
+shape = SubResource("RectangleShape2D_n1rug")

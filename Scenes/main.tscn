@@ -1,0 +1,91 @@
+[gd_scene load_steps=12 format=3 uid="uid://bfv0cktxnrvsl"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_jitgo"]
+[ext_resource type="PackedScene" uid="uid://bxib1ohbypr3y" path="res://Scenes/player.tscn" id="2_kpsms"]
+[ext_resource type="PackedScene" uid="uid://ixl82rs2qqju" path="res://Scenes/hoop.tscn" id="3_imr1w"]
+[ext_resource type="PackedScene" uid="uid://dkdb81fbl8gkb" path="res://Scenes/celtics_court..tscn" id="3_nfqyp"]
+[ext_resource type="PackedScene" uid="uid://bsl17io0ik5tt" path="res://Scenes/Slime.tscn" id="4_2mbqs"]
+[ext_resource type="PackedScene" uid="uid://bfusmch8vtq4w" path="res://Scenes/spawner.tscn" id="5_b83vf"]
+[ext_resource type="PackedScene" uid="uid://duda41q7sfn4w" path="res://Scenes/helper_ai.tscn" id="6_4vcn2"]
+[ext_resource type="PackedScene" uid="uid://ddiylma6jhdce" path="res://Scenes/ai_x_2_helper.tscn" id="7_5twug"]
+[ext_resource type="FontFile" uid="uid://wxkfbcnehy0g" path="res://Assets/Fonts/Fat-Fish.ttf" id="9_nrl2e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xvrxq"]
+font = ExtResource("9_nrl2e")
+font_size = 25
+font_color = Color(0.482353, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wqdk8"]
+font = ExtResource("9_nrl2e")
+font_size = 25
+font_color = Color(0.482353, 1, 1, 1)
+outline_color = Color(1, 0.356863, 1, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_jitgo")
+
+[node name="CelticsCourt" parent="." instance=ExtResource("3_nfqyp")]
+z_index = -1
+position = Vector2(577.5, 325)
+scale = Vector2(0.399515, 0.436997)
+
+[node name="Player" parent="." instance=ExtResource("2_kpsms")]
+position = Vector2(584, 504)
+scale = Vector2(1.1, 1.1)
+
+[node name="HOOP" parent="." instance=ExtResource("3_imr1w")]
+position = Vector2(1058, 280)
+scale = Vector2(1.5, 1.5)
+
+[node name="HOOP2" parent="." instance=ExtResource("3_imr1w")]
+position = Vector2(97, 280)
+scale = Vector2(-1.5, 1.5)
+
+[node name="Spawner" parent="." instance=ExtResource("5_b83vf")]
+
+[node name="Helper AI" parent="." instance=ExtResource("6_4vcn2")]
+position = Vector2(414, 320)
+
+[node name="AiX2Helper" parent="." instance=ExtResource("7_5twug")]
+position = Vector2(528, 135)
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Slime" parent="Enemies" instance=ExtResource("4_2mbqs")]
+position = Vector2(251, 123)
+
+[node name="Slime2" parent="Enemies" instance=ExtResource("4_2mbqs")]
+position = Vector2(906, 140)
+
+[node name="Slime4" parent="Enemies" instance=ExtResource("4_2mbqs")]
+position = Vector2(996, 464)
+
+[node name="Slime5" parent="Enemies" instance=ExtResource("4_2mbqs")]
+position = Vector2(168, 509)
+
+[node name="Slime6" parent="Enemies" instance=ExtResource("4_2mbqs")]
+position = Vector2(774, 131)
+
+[node name="Slime7" parent="Enemies" instance=ExtResource("4_2mbqs")]
+position = Vector2(170, 347)
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 2.543
+anchor_top = 0.5
+anchor_right = 2.543
+anchor_bottom = 0.5
+offset_left = 628.0
+offset_top = 611.5
+offset_right = 796.0
+offset_bottom = 652.5
+text = "Enemy Count: 0"
+label_settings = SubResource("LabelSettings_xvrxq")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 425.0
+offset_top = 611.0
+offset_right = 525.0
+offset_bottom = 640.0
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_wqdk8")

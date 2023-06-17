@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://ixl82rs2qqju"]
+
+[ext_resource type="Script" path="res://Scripts/Hoop.gd" id="1_i7x1n"]
+[ext_resource type="Texture2D" uid="uid://bu7ux6wm20enk" path="res://Basketball_Hoop-removebg-preview.png" id="1_mdtt2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05qwr"]
+size = Vector2(34, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hld6r"]
+size = Vector2(27, 23.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cg8g"]
+size = Vector2(29, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1davo"]
+size = Vector2(9, 105)
+
+[node name="HOOP" type="StaticBody2D" groups=["Hoop"]]
+collision_layer = 7
+collision_mask = 7
+script = ExtResource("1_i7x1n")
+
+[node name="BasketballHoop-removebg-preview" type="Sprite2D" parent="." groups=["Hoop"]]
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("1_mdtt2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Hoop"]]
+position = Vector2(27, 18.5)
+shape = SubResource("RectangleShape2D_05qwr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." groups=["Hoop"]]
+position = Vector2(-30.5, -13.25)
+shape = SubResource("RectangleShape2D_hld6r")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." groups=["Hoop"]]
+position = Vector2(-3.5, -36)
+shape = SubResource("RectangleShape2D_8cg8g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." groups=["Hoop"]]
+position = Vector2(47.5, 18.5)
+shape = SubResource("RectangleShape2D_1davo")
+debug_color = Color(0.212624, 0.596637, 0.642232, 0.42)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+scale = Vector2(0.974811, 0.961821)
+build_mode = 1
+polygon = PackedVector2Array(-27.6977, -11.4366, -27.6977, -13.516, -27.6977, -15.5954, -25.646, -18.7145, -24.6201, -21.8336, -23.5943, -21.8336, -18.4651, -16.6351, -17.4393, -16.6351, -17.4393, -15.5954, -17.4393, -14.5557, -14.3618, -14.5557, -14.3618, -18.7145, -10.2584, -16.6351, -1.02584, -12.4763, 7.18088, -7.27786, 11.2842, -5.19847, 24.6201, 2.07939, 23.5943, 69.6595, 31.801, 69.6595, 31.801, 50.945, 33.8527, 50.945, 33.8527, 53.0244, 32.8269, 54.0641, 33.8527, 56.1435, 36.9302, 56.1435, 37.9561, 55.1038, 38.9819, 55.1038, 38.9819, 56.1435, 38.9819, 57.1832, 38.9819, 61.342, 41.0336, 62.3817, 43.0853, 62.3817, 43.0853, 60.3023, 42.0594, 60.3023, 41.0336, 61.342, 40.0077, 61.342, 40.0077, 55.1038, 38.9819, 54.0641, 36.9302, 54.0641, 36.9302, 8.31756, 38.9819, 5.19847, 31.801, 2.07939, 31.801, -4.15878, 32.8269, -4.15878, 33.8527, -5.19847, 32.8269, -6.23817, 31.801, -6.23817, 31.801, -27.0321, 25.646, -27.0321, -15.3876, -50.945, -15.3876, -69.6595, -18.4651, -69.6595, -18.4651, -23.913, -43.0853, -23.913, -38.9819, -17.6748, -36.9302, -12.4763, -34.8785, -7.27786, -35.9044, -5.19847, -33.8527, -5.19847, -30.7752, -5.19847, -27.6977, -5.19847, -28.7235, -10.3969)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

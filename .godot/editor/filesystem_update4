@@ -1,0 +1,12 @@
+res://Scenes/main.tscn
+res://Scenes/celtics_court..tscn
+res://Scenes/hoop.tscn
+res://Scenes/player.tscn
+res://Scenes/Slime.tscn
+res://Scenes/spawner.tscn
+res://Scenes/Power_UPs/Speed_power_up.tscn
+res://Scenes/Power_UPs/hp_boost.tscn
+res://Scenes/ai_x_2_helper.tscn
+res://Scenes/helper_ai.tscn
+res://Scripts/main.gd
+res://Scripts/Globals.gd

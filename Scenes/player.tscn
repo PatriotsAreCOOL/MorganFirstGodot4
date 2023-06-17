@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxib1ohbypr3y"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_t4lb2"]
+[ext_resource type="Texture2D" uid="uid://bbekmvis80vxa" path="res://Assets/player.png" id="2_d8dcj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ond2m"]
+size = Vector2(53.5, 59)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hq6t7"]
+bg_color = Color(1, 0.313726, 0.411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tlwsd"]
+bg_color = Color(0, 0.792157, 0.345098, 1)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_t4lb2")
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_d8dcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6, 5)
+shape = SubResource("RectangleShape2D_ond2m")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -24.0
+offset_top = -45.0
+offset_right = 15.0
+offset_bottom = -35.0
+theme_override_styles/background = SubResource("StyleBoxFlat_hq6t7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tlwsd")
+max_value = 22.0
+value = 8.0
+show_percentage = false
