@@ -14,6 +14,7 @@ shape = SubResource("RectangleShape2D_sb41x")
 
 [node name="HpBoost" type="Sprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(1.1875, 1.1875)
 texture = ExtResource("1_awdh7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

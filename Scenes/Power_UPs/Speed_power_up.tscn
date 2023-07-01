@@ -4,17 +4,18 @@
 [ext_resource type="Script" path="res://Scripts/Power_ups/Speed_power_up.gd" id="1_fj2v7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wub5o"]
-size = Vector2(32, 26)
+size = Vector2(38, 29)
 
 [node name="Speed_POWER_UP" type="Area2D"]
 script = ExtResource("1_fj2v7")
 
 [node name="SpeedMultiplier" type="Sprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(1.188, 1.188)
 texture = ExtResource("1_7rhpr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -3)
+position = Vector2(0, -4.5)
 shape = SubResource("RectangleShape2D_wub5o")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

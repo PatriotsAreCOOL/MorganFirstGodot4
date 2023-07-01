@@ -1,16 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddiylma6jhdce"]
+[gd_scene load_steps=4 format=3 uid="uid://ddiylma6jhdce"]
 
+[ext_resource type="Script" path="res://Scenes/ai_x_2_helper.gd" id="1_bjnku"]
 [ext_resource type="Texture2D" uid="uid://cuyqucqll4rm1" path="res://Assets/Aix2helper.png" id="1_tnehy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44m1f"]
-size = Vector2(28, 25)
+size = Vector2(38, 29.5)
 
 [node name="AiX2Helper" type="Area2D"]
+script = ExtResource("1_bjnku")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(1.188, 1.188)
 texture = ExtResource("1_tnehy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.5)
+position = Vector2(0, 1.75)
 shape = SubResource("RectangleShape2D_44m1f")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
