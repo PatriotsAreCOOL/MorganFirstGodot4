@@ -21,24 +21,24 @@ Player AI spawner pick up.png::CompressedTexture2D::4328132583226836071::1689426
 Speed_Multiplier.png::CompressedTexture2D::5303385075404441007::1689426576::1689426576::1::::<><>::
 ::res://Assets/WEBP/::1689426576
 Celtics Court.webp::CompressedTexture2D::3693635501945431592::1689426576::1689426576::1::::<><>::
-::res://Scenes/::1689427213
+::res://Scenes/::1689428845
 ai_x_2_helper.gd::GDScript::-1::1689426577::0::1::::<>Area2D<>::
-ai_x_2_helper.tscn::PackedScene::7387821087286233084::1689427213::0::1::::<><>::res://Scenes/ai_x_2_helper.gd<>uid://cuyqucqll4rm1::::res://Assets/Aix2helper.png
+ai_x_2_helper.tscn::PackedScene::7387821087286233084::1689428845::0::1::::<><>::res://Scenes/ai_x_2_helper.gd<>uid://cuyqucqll4rm1::::res://Assets/Aix2helper.png
 basket_ball.tscn::PackedScene::5208605490373584385::1689426577::0::1::::<><>::res://Scripts/basket_ball.gd<>uid://cax5vf1wuff7x::::res://Assets/Cooooollllllll !!!!!   BASKETBALL!!!!!!!!!.png
-celtics_court..tscn::PackedScene::7867464642305999621::1689427212::0::1::::<><>::uid://ciwjtqyj5lvbc::::res://Assets/Celtics Court.png
-helper_ai.tscn::PackedScene::8569285236927546732::1689427213::0::1::::<><>::res://Scripts/helper_ai.gd<>uid://0ecqu237aqu2::::res://Assets/Player AI X2.png
-hoop.tscn::PackedScene::609719700813621942::1689427212::0::1::::<><>::res://Scripts/Hoop.gd<>uid://bu7ux6wm20enk::::res://Basketball_Hoop-removebg-preview.png
-main.tscn::PackedScene::2782238886773355195::1689427212::0::1::::<><>::res://Scripts/main.gd<>uid://bxib1ohbypr3y::::res://Scenes/player.tscn<>uid://ixl82rs2qqju::::res://Scenes/hoop.tscn<>uid://dkdb81fbl8gkb::::res://Scenes/celtics_court..tscn<>uid://bsl17io0ik5tt::::res://Scenes/Slime.tscn<>uid://bfusmch8vtq4w::::res://Scenes/spawner.tscn<>uid://duda41q7sfn4w::::res://Scenes/helper_ai.tscn<>uid://ddiylma6jhdce::::res://Scenes/ai_x_2_helper.tscn<>uid://wxkfbcnehy0g::::res://Assets/Fonts/Fat-Fish.ttf
-player.tscn::PackedScene::4017387003253268460::1689427212::0::1::::<><>::res://Scripts/Player.gd<>uid://bbekmvis80vxa::::res://Assets/player.png
-Slime.tscn::PackedScene::3674164254650293889::1689427212::0::1::::<><>::res://Scripts/Slime.gd<>uid://xea5qgk2y8bp::::res://Assets/Enemies/Slime.png
-spawner.tscn::PackedScene::2779766909749643128::1689427212::0::1::::<><>::res://Scripts/Spawner.gd
-::res://Scenes/Power_UPs/::1689427213
-hp_boost.tscn::PackedScene::5040352158696806125::1689427213::0::1::::<><>::uid://hgv712m67pv1::::res://Assets/POWER_UPS/HP_BOOST.png<>res://Scripts/Power_ups/hp_boost.gd
-Speed_power_up.tscn::PackedScene::408195773096199678::1689427213::0::1::::<><>::uid://chs88h3cho2bb::::res://Assets/POWER_UPS/Speed_Multiplier.png<>res://Scripts/Power_ups/Speed_power_up.gd
-::res://Scripts/::1689426577
+celtics_court..tscn::PackedScene::7867464642305999621::1689428845::0::1::::<><>::uid://ciwjtqyj5lvbc::::res://Assets/Celtics Court.png
+helper_ai.tscn::PackedScene::8569285236927546732::1689428845::0::1::::<><>::res://Scripts/helper_ai.gd<>uid://0ecqu237aqu2::::res://Assets/Player AI X2.png
+hoop.tscn::PackedScene::609719700813621942::1689428845::0::1::::<><>::res://Scripts/Hoop.gd<>uid://bu7ux6wm20enk::::res://Basketball_Hoop-removebg-preview.png
+main.tscn::PackedScene::2782238886773355195::1689428845::0::1::::<><>::res://Scripts/main.gd<>uid://bxib1ohbypr3y::::res://Scenes/player.tscn<>uid://ixl82rs2qqju::::res://Scenes/hoop.tscn<>uid://dkdb81fbl8gkb::::res://Scenes/celtics_court..tscn<>uid://bsl17io0ik5tt::::res://Scenes/Slime.tscn<>uid://bfusmch8vtq4w::::res://Scenes/spawner.tscn<>uid://ddiylma6jhdce::::res://Scenes/ai_x_2_helper.tscn<>uid://wxkfbcnehy0g::::res://Assets/Fonts/Fat-Fish.ttf
+player.tscn::PackedScene::4017387003253268460::1689428845::0::1::::<><>::res://Scripts/Player.gd<>uid://bbekmvis80vxa::::res://Assets/player.png
+Slime.tscn::PackedScene::3674164254650293889::1689428845::0::1::::<><>::res://Scripts/Slime.gd<>uid://xea5qgk2y8bp::::res://Assets/Enemies/Slime.png
+spawner.tscn::PackedScene::2779766909749643128::1689428845::0::1::::<><>::res://Scripts/Spawner.gd
+::res://Scenes/Power_UPs/::1689428845
+hp_boost.tscn::PackedScene::5040352158696806125::1689428845::0::1::::<><>::uid://hgv712m67pv1::::res://Assets/POWER_UPS/HP_BOOST.png<>res://Scripts/Power_ups/hp_boost.gd
+Speed_power_up.tscn::PackedScene::408195773096199678::1689428845::0::1::::<><>::uid://chs88h3cho2bb::::res://Assets/POWER_UPS/Speed_Multiplier.png<>res://Scripts/Power_ups/Speed_power_up.gd
+::res://Scripts/::1689428702
 basket_ball.gd::GDScript::-1::1689426577::0::1::::<>Area2D<>::
 Globals.gd::GDScript::-1::1689426577::0::1::::<>Node<>::
-helper_ai.gd::GDScript::-1::1689426577::0::1::::<>CharacterBody2D<>::
+helper_ai.gd::GDScript::-1::1689428702::0::1::::<>CharacterBody2D<>::
 Hoop.gd::GDScript::-1::1689426577::0::1::::<>StaticBody2D<>::
 main.gd::GDScript::-1::1689426577::0::1::::<>Node2D<>::
 Player.gd::GDScript::-1::1689426577::0::1::::<>CharacterBody2D<>::

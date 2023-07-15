@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bfv0cktxnrvsl"]
+[gd_scene load_steps=11 format=3 uid="uid://bfv0cktxnrvsl"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jitgo"]
 [ext_resource type="PackedScene" uid="uid://bxib1ohbypr3y" path="res://Scenes/player.tscn" id="2_kpsms"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://dkdb81fbl8gkb" path="res://Scenes/celtics_court..tscn" id="3_nfqyp"]
 [ext_resource type="PackedScene" uid="uid://bsl17io0ik5tt" path="res://Scenes/Slime.tscn" id="4_2mbqs"]
 [ext_resource type="PackedScene" uid="uid://bfusmch8vtq4w" path="res://Scenes/spawner.tscn" id="5_b83vf"]
-[ext_resource type="PackedScene" uid="uid://duda41q7sfn4w" path="res://Scenes/helper_ai.tscn" id="6_4vcn2"]
 [ext_resource type="PackedScene" uid="uid://ddiylma6jhdce" path="res://Scenes/ai_x_2_helper.tscn" id="7_5twug"]
 [ext_resource type="FontFile" uid="uid://wxkfbcnehy0g" path="res://Assets/Fonts/Fat-Fish.ttf" id="9_nrl2e"]
 
@@ -42,9 +41,6 @@ position = Vector2(97, 280)
 scale = Vector2(-1.5, 1.5)
 
 [node name="Spawner" parent="." instance=ExtResource("5_b83vf")]
-
-[node name="Helper AI" parent="." instance=ExtResource("6_4vcn2")]
-position = Vector2(414, 320)
 
 [node name="AiX2Helper" parent="." instance=ExtResource("7_5twug")]
 position = Vector2(528, 135)

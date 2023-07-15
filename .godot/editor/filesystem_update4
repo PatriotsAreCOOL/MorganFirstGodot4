@@ -8,3 +8,4 @@ res://Scenes/Power_UPs/Speed_power_up.tscn
 res://Scenes/Power_UPs/hp_boost.tscn
 res://Scenes/ai_x_2_helper.tscn
 res://Scenes/helper_ai.tscn
+res://Scripts/helper_ai.gd
